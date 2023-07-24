@@ -1,0 +1,2 @@
+# Horizontal Sliding Images
+This code come from the YouTuber [Hyperplexed](https://www.youtube.com/@Hyperplexed) who create this effect that come from [this](https://camillemormal.webflow.io/) website.
