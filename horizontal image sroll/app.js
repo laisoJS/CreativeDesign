@@ -2,8 +2,8 @@ const track = document.getElementById("image-track");                           
 
 const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;                            // Select the data-mouse-down-at attribute from the image-track element and set it to the X position of the mouse
 const handleOnUp = () => {
-        track.dataset.mouseDownAt = "0";
-        track.dataset.prevPercentage = track.dataset.percentage;
+        track.dataset.mouseDownAt = "0";                                                    // Set the data-mouse-down-at attribute of the image-track element to 0
+        track.dataset.prevPercentage = track.dataset.percentage;                            // Set the data-prev-percentage attribute of the image-track element to the data-percentage attribute of the image-track element
 };
 
 const handleOnMove = e => {
@@ -31,6 +31,7 @@ const handleOnMove = e => {
 /*
    apply the defined functions to the mouse and touch events
 */
+
 window.onmousedown = e => handleOnDown(e);
 window.ontouchstart = e => handleOnDown(e.touches[0]);
 window.onmouseup = e => handleOnUp(e);
